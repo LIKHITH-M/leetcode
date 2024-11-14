@@ -2,7 +2,7 @@ class Solution {
     public int longestPalindrome(String s) {
         int[] charCounts = new int[128];
 
-        // Step 1: Count each character
+        // Step 1: Counting the each character
         for (char c : s.toCharArray()) {
             charCounts[c]++;
         }
