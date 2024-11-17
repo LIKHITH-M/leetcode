@@ -1,3 +1,9 @@
+/*
+number of unique trees formed by the n nodes is:
+first, for one node as root =number of nodes that are to left * number of nodes that are to right
+second, add for all the nodes considering every nodes at root.
+*/
+
 public class Solution {
     public int numTrees(int n) {
       int[] G = new int[n + 1]; // Array to store the results for each number of nodes
