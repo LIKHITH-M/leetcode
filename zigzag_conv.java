@@ -1,4 +1,5 @@
-/* The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+/* The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
+(you may want to display this pattern in a fixed font for better legibility)
 
 P   A   H   N
 A P L S I I G
@@ -43,7 +44,8 @@ class Solution {
         // Traverse the string
         int currentRow = 0;
         boolean goingDown = false;
-        
+        //This code snippet implements the core logic to traverse a string in a zigzag pattern and
+        //assign each character to its appropriate row based on the current direction (down or up)
         for (char c : s.toCharArray()) {
             rows[currentRow].append(c);
             
